@@ -1,0 +1,29 @@
+\documentclass{article}
+
+% \defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{color}
+\definecolor{GradBlue}{RGB}{0,80,80}
+\setmainfont{Adobe Jenson Pro}
+
+\begin{document}
+\begin{tikzpicture}
+  \node[] at (0,0) {\fontsize{48pt}{48pt}\selectfont Gradient };
+  \node[] at (-0.85, 0.6) {\fontsize{32pt}{24pt}\selectfont The};
+  \node[rotate around={180:(0,0)}] at (-3.7, -0.2) {\color{GradBlue}\fontsize{104pt}{48pt}\selectfont Δ};
+  \node [] at (-1.2, -1) {\fontsize{32pt}{24pt}\selectfont Institute.};
+% \node[draw,align=left] at (3,0) {some text\\ spanning three lines\\ with manual line breaks};
+% \node[draw,text width=4cm] at (2,-2) {some text spanning three lines with automatic line breaks};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \node[] at (0,0) {\fontsize{12pt}{12pt}\selectfont Gradient };
+  \node[] at (-0.25, 0.15) {\fontsize{7pt}{7pt}\selectfont The};
+  \node[rotate around={180:(0,0)}] at (-1, -0.08) {\color{GradBlue}\fontsize{28pt}{24pt}\selectfont Δ};
+  \node [] at (-0.25, -0.3) {\fontsize{8pt}{8pt}\selectfont Institute.};
+% \node[draw,align=left] at (3,0) {some text\\ spanning three lines\\ with manual line breaks};
+% \node[draw,text width=4cm] at (2,-2) {some text spanning three lines with automatic line breaks};
+\end{tikzpicture}
+\end{document}
